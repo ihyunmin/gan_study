@@ -13,6 +13,8 @@ import matplotlib.animation as animation
 from IPython.display import HTML
 from generator import Generator
 from discriminator import Discriminator
+import os
+from torchvision.utils import save_image
 
 # set Seed
 # manualSeed = 999
@@ -27,7 +29,7 @@ image_size = 64
 nc = 3 # Number of channels
 nz = 100
 ndf = 64 # Size of feature maps in discrimintor
-num_epochs = 15 # epoch
+num_epochs = 5 # epoch
 lr = 0.0002 # learning rate
 beta1 = 0.5 # Beta1 hyper-parameter for Adam optimizers
 ngpu = 1 # Number of GPUs
@@ -135,6 +137,7 @@ def main():
             D_losses.append(D_loss.item())
 
             if (iters%500 == 0) or ((epoch == num_epochs -1) and (i == len(dataloader)- 1)):
+                save_image(fake.data[:25], os.path.join(os.getcwd(), 'generate_result', f"{iters}.png") , nrow=5, normalize=True)
                 with torch.no_grad():
                     fake = netG(fixed_noise).detach().cpu()
                 img_list.append(utils.make_grid(fake ,padding=2, normalize=True))
