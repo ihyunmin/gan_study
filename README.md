@@ -20,4 +20,8 @@ https://arxiv.org/pdf/1411.1784.pdf
 
 2. Pytorch DCGAN Tutorial : https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html     
 
-3. Pytorch GAN 모음 : https://github.com/eriklindernoren/PyTorch-GAN     
+3. Pytorch GAN 모음 : https://github.com/eriklindernoren/PyTorch-GAN       
+
+4. CycleGAN & Pix2Pix : https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix     
+
+5. StyleGAN v1 : https://github.com/huangzh13/StyleGAN.pytorch         
