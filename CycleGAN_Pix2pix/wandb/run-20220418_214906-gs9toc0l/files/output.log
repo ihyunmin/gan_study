@@ -1,0 +1,16 @@
+create web directory ./checkpoints/edges2handbags_pix2pix/web...
+learning rate 0.0002000 -> 0.0002000
+/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:131: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torchvision/transforms/transforms.py:332: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torchvision/transforms/transforms.py:332: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torchvision/transforms/transforms.py:332: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torchvision/transforms/transforms.py:332: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+(epoch: 1, iters: 100, time: 0.032, data: 0.227) G_GAN: 2.840 G_L1: 43.957 D_real: 0.143 D_fake: 0.194
+(epoch: 1, iters: 200, time: 0.033, data: 0.001) G_GAN: 1.394 G_L1: 33.694 D_real: 0.103 D_fake: 0.916
+(epoch: 1, iters: 300, time: 0.033, data: 0.001) G_GAN: 2.949 G_L1: 43.447 D_real: 0.189 D_fake: 0.067
+(epoch: 1, iters: 400, time: 0.638, data: 0.002) G_GAN: 1.433 G_L1: 31.649 D_real: 1.225 D_fake: 0.108

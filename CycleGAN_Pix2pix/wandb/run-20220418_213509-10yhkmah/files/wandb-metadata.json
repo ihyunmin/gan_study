@@ -1,0 +1,32 @@
+{
+    "os": "Linux-5.4.0-97-generic-x86_64-with-glibc2.27",
+    "python": "3.9.7",
+    "heartbeatAt": "2022-04-18T12:35:13.824955",
+    "startedAt": "2022-04-18T12:35:09.073325",
+    "docker": null,
+    "gpu": "GeForce RTX 2080 Ti",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": "10.1.105",
+    "args": [
+        "--dataroot",
+        "./datasets/edges2handbags",
+        "--name",
+        "edges2handbags_pix2pix",
+        "--model",
+        "pix2pix",
+        "--use_wandb"
+    ],
+    "state": "running",
+    "program": "/home/klleon/PycharmProjects/gan/pytorch-CycleGAN-and-pix2pix/test.py",
+    "codePath": "test.py",
+    "git": {
+        "remote": "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.git",
+        "commit": "003efc4c8819de47ff11b5a0af7ba09aee7f5fc1"
+    },
+    "email": "gusals005@gmail.com",
+    "root": "/home/klleon/PycharmProjects/gan/pytorch-CycleGAN-and-pix2pix",
+    "host": "klleon-desktop",
+    "username": "klleon",
+    "executable": "/home/klleon/anaconda3/envs/gan/bin/python"
+}

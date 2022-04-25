@@ -121,4 +121,5 @@ def main(data_loader):
 
 if __name__=="__main__":
     data_loader = load_data()
+    print(len(data_loader))
     main(data_loader)

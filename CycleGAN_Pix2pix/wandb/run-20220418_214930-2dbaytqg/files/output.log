@@ -1,0 +1,42 @@
+create web directory ./checkpoints/edges2handbags_pix2pix/web...
+learning rate 0.0002000 -> 0.0002000
+/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:131: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torchvision/transforms/transforms.py:332: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torchvision/transforms/transforms.py:332: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torchvision/transforms/transforms.py:332: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torchvision/transforms/transforms.py:332: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+(epoch: 1, iters: 100, time: 0.027, data: 0.240) G_GAN: 1.697 G_L1: 51.504 D_real: 0.610 D_fake: 0.432
+(epoch: 1, iters: 200, time: 0.027, data: 0.001) G_GAN: 1.485 G_L1: 44.982 D_real: 0.233 D_fake: 0.621
+(epoch: 1, iters: 300, time: 0.026, data: 0.002) G_GAN: 2.150 G_L1: 43.082 D_real: 0.184 D_fake: 0.429
+(epoch: 1, iters: 400, time: 0.303, data: 0.002) G_GAN: 1.998 G_L1: 39.824 D_real: 0.151 D_fake: 0.235
+(epoch: 1, iters: 500, time: 0.026, data: 0.002) G_GAN: 3.062 G_L1: 43.178 D_real: 0.040 D_fake: 0.198
+(epoch: 1, iters: 600, time: 0.026, data: 0.002) G_GAN: 1.533 G_L1: 25.307 D_real: 1.373 D_fake: 0.225
+(epoch: 1, iters: 700, time: 0.027, data: 0.002) G_GAN: 1.455 G_L1: 36.007 D_real: 0.470 D_fake: 0.303
+(epoch: 1, iters: 800, time: 0.055, data: 0.001) G_GAN: 2.737 G_L1: 36.717 D_real: 0.017 D_fake: 0.583
+(epoch: 1, iters: 900, time: 0.028, data: 0.002) G_GAN: 2.686 G_L1: 33.925 D_real: 0.107 D_fake: 0.121
+(epoch: 1, iters: 1000, time: 0.026, data: 0.002) G_GAN: 3.267 G_L1: 30.674 D_real: 0.011 D_fake: 0.297
+(epoch: 1, iters: 1100, time: 0.027, data: 0.002) G_GAN: 0.874 G_L1: 25.053 D_real: 0.411 D_fake: 0.094
+(epoch: 1, iters: 1200, time: 0.050, data: 0.002) G_GAN: 3.049 G_L1: 38.390 D_real: 0.060 D_fake: 0.122
+(epoch: 1, iters: 1300, time: 0.026, data: 0.001) G_GAN: 2.317 G_L1: 29.259 D_real: 0.091 D_fake: 0.496
+(epoch: 1, iters: 1400, time: 0.026, data: 0.002) G_GAN: 2.272 G_L1: 32.436 D_real: 0.094 D_fake: 0.437
+(epoch: 1, iters: 1500, time: 0.026, data: 0.002) G_GAN: 2.974 G_L1: 35.292 D_real: 0.272 D_fake: 0.045
+(epoch: 1, iters: 1600, time: 0.058, data: 0.002) G_GAN: 2.323 G_L1: 32.947 D_real: 0.005 D_fake: 0.465
+(epoch: 1, iters: 1700, time: 0.027, data: 0.002) G_GAN: 1.642 G_L1: 27.909 D_real: 0.403 D_fake: 0.146
+(epoch: 1, iters: 1800, time: 0.026, data: 0.002) G_GAN: 0.882 G_L1: 33.225 D_real: 0.581 D_fake: 0.277
+Traceback (most recent call last):
+  File "/home/klleon/PycharmProjects/gan/pytorch-CycleGAN-and-pix2pix/train.py", line 52, in <module>
+    model.optimize_parameters()   # calculate loss functions, get gradients, update network weights
+  File "/home/klleon/PycharmProjects/gan/pytorch-CycleGAN-and-pix2pix/models/pix2pix_model.py", line 126, in optimize_parameters
+    self.backward_G()                   # calculate graidents for G
+  File "/home/klleon/PycharmProjects/gan/pytorch-CycleGAN-and-pix2pix/models/pix2pix_model.py", line 114, in backward_G
+    self.loss_G.backward()
+  File "/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torch/_tensor.py", line 363, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

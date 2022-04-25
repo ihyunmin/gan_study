@@ -1,0 +1,36 @@
+create web directory ./checkpoints/edges2handbags_pix2pix/web...
+learning rate 0.0002000 -> 0.0002000
+/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:131: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torchvision/transforms/transforms.py:332: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torchvision/transforms/transforms.py:332: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torchvision/transforms/transforms.py:332: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torchvision/transforms/transforms.py:332: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+(epoch: 1, iters: 200, time: 0.023, data: 0.264) G_GAN: 0.706 G_L1: 50.643 D_real: 0.667 D_fake: 0.444
+(epoch: 1, iters: 400, time: 0.168, data: 0.003) G_GAN: 1.225 G_L1: 39.217 D_real: 0.479 D_fake: 0.372
+(epoch: 1, iters: 600, time: 0.023, data: 0.002) G_GAN: 2.004 G_L1: 43.379 D_real: 1.485 D_fake: 1.776
+(epoch: 1, iters: 800, time: 0.037, data: 0.002) G_GAN: 2.790 G_L1: 34.810 D_real: 0.048 D_fake: 1.033
+(epoch: 1, iters: 1000, time: 0.023, data: 0.002) G_GAN: 2.213 G_L1: 37.668 D_real: 0.164 D_fake: 0.184
+(epoch: 1, iters: 1200, time: 0.036, data: 0.002) G_GAN: 2.304 G_L1: 31.723 D_real: 0.201 D_fake: 0.062
+(epoch: 1, iters: 1400, time: 0.023, data: 0.002) G_GAN: 2.339 G_L1: 28.015 D_real: 0.159 D_fake: 0.101
+(epoch: 1, iters: 1600, time: 0.036, data: 0.002) G_GAN: 2.796 G_L1: 34.047 D_real: 0.173 D_fake: 0.842
+(epoch: 1, iters: 1800, time: 0.024, data: 0.004) G_GAN: 2.799 G_L1: 36.855 D_real: 0.099 D_fake: 0.150
+(epoch: 1, iters: 2000, time: 0.044, data: 0.002) G_GAN: 3.708 G_L1: 31.856 D_real: 0.193 D_fake: 0.025
+(epoch: 1, iters: 2200, time: 0.023, data: 0.002) G_GAN: 3.285 G_L1: 38.809 D_real: 0.188 D_fake: 0.109
+(epoch: 1, iters: 2400, time: 0.035, data: 0.003) G_GAN: 1.394 G_L1: 27.776 D_real: 0.608 D_fake: 0.352
+(epoch: 1, iters: 2600, time: 0.024, data: 0.002) G_GAN: 3.112 G_L1: 34.860 D_real: 0.074 D_fake: 0.416
+(epoch: 1, iters: 2800, time: 0.039, data: 0.002) G_GAN: 3.773 G_L1: 31.983 D_real: 0.012 D_fake: 1.879
+(epoch: 1, iters: 3000, time: 0.023, data: 0.002) G_GAN: 2.940 G_L1: 31.976 D_real: 0.012 D_fake: 1.478
+(epoch: 1, iters: 3200, time: 0.034, data: 0.002) G_GAN: 1.902 G_L1: 33.447 D_real: 0.109 D_fake: 0.148
+(epoch: 1, iters: 3400, time: 0.023, data: 0.003) G_GAN: 0.630 G_L1: 33.781 D_real: 0.961 D_fake: 0.040
+(epoch: 1, iters: 3600, time: 0.041, data: 0.002) G_GAN: 3.105 G_L1: 28.524 D_real: 0.008 D_fake: 1.040
+Traceback (most recent call last):
+  File "/home/klleon/PycharmProjects/gan/pytorch-CycleGAN-and-pix2pix/train.py", line 51, in <module>
+    model.set_input(data)         # unpack data from dataset and apply preprocessing
+  File "/home/klleon/PycharmProjects/gan/pytorch-CycleGAN-and-pix2pix/models/pix2pix_model.py", line 82, in set_input
+    self.real_A = input['A' if AtoB else 'B'].to(self.device)
+KeyboardInterrupt

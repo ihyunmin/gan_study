@@ -32,6 +32,9 @@ class Generator(nn.Module):
     
     def forward(self, noise, labels):
         gen_input = torch.cat((self.label_emb(labels), noise), -1)
+        
+        if labels[0] == 0:
+            print(self.label_emb(labels)[0])
         img = self.model(gen_input)
         img = img.view(img.size(0), *img_shape)
         return img

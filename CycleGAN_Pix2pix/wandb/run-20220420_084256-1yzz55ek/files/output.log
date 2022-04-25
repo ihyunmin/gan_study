@@ -1,0 +1,13 @@
+/home/klleon/anaconda3/envs/gan/lib/python3.9/site-packages/torchvision/transforms/transforms.py:332: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+creating web directory ./results/edges2handbags_pix2pix/test_latest
+processing (0000)-th image... ['./datasets/edges2handbags/test/100_AB.jpg']
+processing (0005)-th image... ['./datasets/edges2handbags/test/105_AB.jpg']
+processing (0010)-th image... ['./datasets/edges2handbags/test/10_AB.jpg']
+processing (0015)-th image... ['./datasets/edges2handbags/test/114_AB.jpg']
+processing (0020)-th image... ['./datasets/edges2handbags/test/119_AB.jpg']
+processing (0025)-th image... ['./datasets/edges2handbags/test/123_AB.jpg']
+processing (0030)-th image... ['./datasets/edges2handbags/test/128_AB.jpg']
+processing (0035)-th image... ['./datasets/edges2handbags/test/132_AB.jpg']
+processing (0040)-th image... ['./datasets/edges2handbags/test/137_AB.jpg']
+processing (0045)-th image... ['./datasets/edges2handbags/test/141_AB.jpg']
